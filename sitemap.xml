@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -11,7 +11,7 @@
 
     
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//install-and-activate/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//install-and-activate/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -20,59 +20,13 @@
     
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//quickstart/frontend/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//quickstart/frontend/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//quickstart/backend/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/using-graphiql-to-explore-docs-and-schema/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/custom-post-types-and-taxonomies/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/add-fields-to-schema/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/use-graphql-in-php-without-http-request/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/override-field-resolvers/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/unit-testing-wpgraphql/</loc>
-     <lastmod>2017-11-28</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//tutorials/unit-testing-extensions/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//quickstart/backend/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -82,37 +36,83 @@
     
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/types-and-schema/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/using-graphiql-to-explore-docs-and-schema/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/actions-filters/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/custom-post-types-and-taxonomies/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/auth/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/add-fields-to-schema/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/extensions/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/use-graphql-in-php-without-http-request/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/tooling/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/override-field-resolvers/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//reference/unit-tests/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/unit-testing-wpgraphql/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/unit-testing-extensions/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/types-and-schema/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/actions-filters/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/auth/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/extensions/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/tooling/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/unit-tests/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -121,7 +121,7 @@
 
     
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//faq/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//faq/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -129,7 +129,7 @@
 
     
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//community-and-support/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//community-and-support/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -137,7 +137,7 @@
 
     
     <url>
-     <loc>https://wpgraphql.github.io/wp-graphql//contributing/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//contributing/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
