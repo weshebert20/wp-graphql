@@ -510,8 +510,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-up-with-edges-and-nodes" title="What's up with "edges" and "nodes"?" class="md-nav__link">
-    What's up with "edges" and "nodes"?
+  <a href="#what-are-edges-and-nodes" title="What are "edges" and "nodes"?" class="md-nav__link">
+    What are "edges" and "nodes"?
   </a>
   
     <nav class="md-nav">
@@ -531,8 +531,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pagination" title="Pagination" class="md-nav__link">
+    Pagination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-edge-data" title="Other Edge Data" class="md-nav__link">
+    Other Edge Data
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-graphql-client" title="What is a GraphQL Client?" class="md-nav__link">
+    What is a GraphQL Client?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-the-http-status-403" title="Why is the HTTP status 403?" class="md-nav__link">
+    Why is the HTTP status 403?
+  </a>
   
 </li>
       
@@ -618,8 +646,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-up-with-edges-and-nodes" title="What's up with "edges" and "nodes"?" class="md-nav__link">
-    What's up with "edges" and "nodes"?
+  <a href="#what-are-edges-and-nodes" title="What are "edges" and "nodes"?" class="md-nav__link">
+    What are "edges" and "nodes"?
   </a>
   
     <nav class="md-nav">
@@ -639,8 +667,36 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pagination" title="Pagination" class="md-nav__link">
+    Pagination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-edge-data" title="Other Edge Data" class="md-nav__link">
+    Other Edge Data
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-graphql-client" title="What is a GraphQL Client?" class="md-nav__link">
+    What is a GraphQL Client?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-the-http-status-403" title="Why is the HTTP status 403?" class="md-nav__link">
+    Why is the HTTP status 403?
+  </a>
   
 </li>
       
@@ -682,7 +738,7 @@
 <h2 id="how-to-override-a-fields-resolver">How to override a field's resolver?<a class="headerlink" href="#how-to-override-a-fields-resolver" title="Permanent link">&para;</a></h2>
 <p>Sometimes you need granular control over how a specific field resolves. Field resolvers can easily be filtered so that you can control what is returned.</p>
 <p><a href="../tutorials/override-field-resolvers/">Learn more about overriding Field resolvers</a></p>
-<h2 id="whats-up-with-edges-and-nodes">What's up with "edges" and "nodes"?<a class="headerlink" href="#whats-up-with-edges-and-nodes" title="Permanent link">&para;</a></h2>
+<h2 id="what-are-edges-and-nodes">What are "edges" and "nodes"?<a class="headerlink" href="#what-are-edges-and-nodes" title="Permanent link">&para;</a></h2>
 <p>GraphQL itself makes no mandates on the shape of a Schema. This is great, but can also be problematic as a poorly defined schema can be difficult to use, extend, and version.</p>
 <p>The shape of the WPGraphQL Schema is inspired heavily by the <a href="https://facebook.github.io/relay/docs/graphql-relay-specification.html">Relay spec</a>.</p>
 <p>The Relay spec introduces the concept of <a href="https://facebook.github.io/relay/docs/graphql-connections.html">Connections</a>. </p>
@@ -714,7 +770,7 @@
 
 
 <p>The <em>edges</em> serve as a place for where "edge" data can be exposed. The most common example is pagination cursors. </p>
-<p><strong>Pagination</strong></p>
+<h3 id="pagination">Pagination<a class="headerlink" href="#pagination" title="Permanent link">&para;</a></h3>
 <p>In the <a href="#naive-schema">naiive schema</a>, we just get a list of posts back. There's no data exposed that references where each
 post belongs in the larger data set. For pagination to work well, we need to be able to pass data back in our next query
 to indicate what posts we want to query next. </p>
@@ -788,12 +844,34 @@ the next query.</p>
 </pre></div>
 
 
-<div class="admonition info">
-<p class="admonition-title">Learn more about using Variables with GraphQL</p>
-<p>This is a basic example showing how to use variables. As you work with GraphQL more, there are better ways to handle variables in your GraphQL requests. <a href="http://graphql.org/learn/queries/#variables">Learn more about GraphQL variables</a></p>
+<p>WPGraphQL takes the <code>after</code> argument on the connection, and uses that to determine where to start the query and get the 10 posts after that point in the data set.</p>
+<div class="admonition note">
+<p class="admonition-title">Variables with GraphQL</p>
+<p>This is a basic example showing variables in GraphQL Query. As you work with GraphQL more, there are better ways to handle variables in your GraphQL requests. <a href="http://graphql.org/learn/queries/#variables">Learn more about using GraphQL variables</a></p>
 </div>
+<h3 id="other-edge-data">Other Edge Data<a class="headerlink" href="#other-edge-data" title="Permanent link">&para;</a></h3>
+<p>Pagination is an important part of the "connection" shape of the Schema, but "edges" provide a great spot for other info
+that's not a property of either "node" in a connection. </p>
+<p>One hypothetical example of edge data, would be a <code>friendsSince</code> field on a connection between 2 friends in a Schema. A field like that isn't
+a property of either user, it's a property that exists only in the context of the connection. A naiive schema wouldn't have a good way
+to display this "edge" data, but the Relay connection spec provides the nested edges/node shape to make it easy to query for "edge" data when needed.</p>
+<div class="admonition info">
+<p class="admonition-title">Food for thought</p>
+<p>Possibly WordPress will one day have a formal way to store Term_Relationship_Meta or Object_Relationship_Meta, where data can be stored when info about specific connections is needed. This would be perfect for displaying as "edge" data in the GraphQL Schema.</p>
+</div>
+<h2 id="what-is-a-graphql-client">What is a GraphQL Client?<a class="headerlink" href="#what-is-a-graphql-client" title="Permanent link">&para;</a></h2>
+<p>A GraphQL client is anything that makes requests to a GraphQL server. Anything that can make an HTTP POST request (CURL, Postman, basically any programming language) can be a GraphQL client.</p>
+<p>It's most common to use GraphQL in the context of JavaScript single page apps or native iOS and Android apps, and in that case, our recommendation is to use <a href="https://www.apollographql.com/client/">Apollo Client</a>. </p>
+<p>Apollo Client is a caching GraphQL client that eases managing GraphQL requests and caches and normalized the responses a GraphQL server provides. Apollo client is community driven and is used by industry leaders including The New York Times, Qz.com, Intuit, IBM, KLM and more.</p>
+<h2 id="why-is-the-http-status-403">Why is the HTTP status 403?<a class="headerlink" href="#why-is-the-http-status-403" title="Permanent link">&para;</a></h2>
+<p>Unlike REST, where each endpoint represents a single resource, GraphQL allows for multiple resources to be fetched at once. Some data might be public, and some might not be. Some might resolve fine, and some might have errors.</p>
+<p>Because of this, WPGraphQL will resolve as much of the data as it can and return it, and will return errors associated with the data it couldn't resolve.</p>
+<p>The 403 status is default to indicate that the request is not authenticated. It doesn't mean there is anything wrong. WPGraphQL will still resolve the data that
+doesn't require any type of authentication (which in many cases is all the data that was requested). </p>
+<p>However, for requests for private data or Mutations where authentication is required, it becomes more important to be able to identify when the server properly identifies authentication and when it doesn't.</p>
+<p>By returning a 403 status for non-authenticated requests and a 200 status for authenticated requests, clients (such as Apollo) can use the status to ask users to re-authenticate as needed, for example when an Auth token has expired or a Password was changed, or any other reason authentication might fail on subsequent requests.</p>
 <h2 id="how-many-houses-are-in-iowa">How many houses are in Iowa?<a class="headerlink" href="#how-many-houses-are-in-iowa" title="Permanent link">&para;</a></h2>
-<p>Not sure why this is frequently asked, but you won't find the answer here...</p>
+<p>Not sure why this is frequently asked, or if it even is, but you won't find the answer here...</p>
 <h2 id="what-if-i-have-a-new-question">What if I have a new question?<a class="headerlink" href="#what-if-i-have-a-new-question" title="Permanent link">&para;</a></h2>
 <p>If you have a question that isn't answered in the FAQ or in any of Tutorials or Reference guide, feel free to create an issue in Github, but be as specific and detailed as possible to give us the best chance to help you. </p>
 <p>Additionally, you can reach out to the greater WPGraphQL community on Slack: <a href="https://wpgraphql.com/community">join here</a></p>

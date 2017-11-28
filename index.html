@@ -629,8 +629,8 @@ and keep up to date with conversations in <a href="https://wpgraphql.com/communi
 <p>What does that mean? Basically GraphQL provides a consistent way to make declarative queries, which will enable you to more easily retrieve the data you want, and the shape that you want it in. </p>
 <p>GraphQL can be implemented in any language and can cover a vast amount of use cases. </p>
 <p>WPGraphQL exposes a WordPress installation's data through a GraphQL API. You can send a GraphQL request over HTTP to the <code>/graphql</code> endpoint provided by the plugin and in response you will get the matching JSON representation of your data.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
+<div class="admonition note">
+<p class="admonition-title">Use WPGraphQL without HTTP requests</p>
 <p>You can also use GraphQL Queries and Mutations from within WordPress PHP without the need for HTTP network requests. <a href="tutorials/use-graphql-in-php-without-http-request/">Learn more</a></p>
 </div>
 <h2 id="why-use-wpgraphql">Why use WPGraphQL?<a class="headerlink" href="#why-use-wpgraphql" title="Permanent link">&para;</a></h2>
@@ -644,14 +644,43 @@ and keep up to date with conversations in <a href="https://wpgraphql.com/communi
 <li><strong>External Documentation:</strong> GraphQL is self-documenting, reducing the time and resources needed for maintaining API documentation</li>
 <li><strong>Total SQL queries:</strong> GraphQL queries can ask for multiple resources, or nested resources in a single request allowing GraphQL to determine the most efficient way to get the data from the database with as few SQL queries as possible.</li>
 <li><strong>Code Duplication:</strong> Because GraphQL exposes all server capabilities in a single Schema, there's no need to duplicate code for various endpoints. The client can control the shape of their model without specific feature endpoint, which typically requires duplicate server code.</li>
+<li><strong>Over/Under Fetching:</strong> With REST, you are constantly over and under-fetching at the same time. Endpoints typically have more data than you need, and not enough requiring round-trips to get other resources. GraphQL returns exactly what was asked for and can handle connections in a single request.</li>
 </ul>
 <p>WPGraphQL helps improve:</p>
 <ul>
 <li><strong>Performance:</strong> WPGraphQL utilizies existing WordPress Core APIs, such as WP_Query, so caching and filters are respected, but WPGraphQL also makes use of deferred resolvers and some look-ahead techniques (as all fields are known in the request before execution begins), allowing for data to be fetched and returned with as few SQL queries as possible. </li>
 <li><strong>Developer Happiness:</strong> The strong-type system and explicit nature of GraphQL requests makes it easy for developers to understand GraphQL query and mutation requests long after code is written. Additionally, code duplication is drastically reduced as the API is defined in one spot, not in feature endpoints.</li>
 <li><strong>Versioning:</strong> REST APIs and other APIs can be difficult to version. GraphQL makes <a href="http://graphql.org/#without-versions">evolving the API</a> much easier than how other APIs are versioned. </li>
+<li><strong>Client/Server Decoupling:</strong> Since the GraphQL server describes the capabilities and the client defines the shape of the model, the coupling between client and server is loosened. Clients can iterate their models without custom endpoints needing to be created or updated.</li>
 </ul>
 <h2 id="how-does-wpgraphql-work">How does WPGraphQL Work?<a class="headerlink" href="#how-does-wpgraphql-work" title="Permanent link">&para;</a></h2>
+<p>WPGraphQL adds a <code>/graphql</code> endpoint to your WordPress install. </p>
+<p>When HTTP requests are made to that endpoint, WPGraphQL executes the GraphQL request. </p>
+<div class="admonition note">
+<p class="admonition-title">Use WPGraphQL without HTTP requests</p>
+<p>You can also use GraphQL Queries and Mutations from within WordPress PHP without the need for HTTP network requests. <a href="tutorials/use-graphql-in-php-without-http-request/">Learn more</a></p>
+</div>
+<p>The first part of the execution process, is validating the Query. Since GraphQL is centered around a strong typed Schema, before any real execution begins GraphQL can compare the request against the Schema to make sure the request is even valid. </p>
+<p>If it's invalid, no execution occurs, errors are returned right away. </p>
+<p>If the request is valid, GraphQL breaks down the fields and resolves them as a tree, passing the resolved data down to the next fields in the tree. </p>
+<p>Take this query for example: </p>
+<div class="codehilite"><pre><span></span>{
+  post(id:&quot;...&quot;) {
+     id
+     title
+     customField
+  }
+}
+</pre></div>
+
+
+<p>Behind the Scenes, GraphQL uses native WordPress Core functions to resolve the post by it's ID. </p>
+<div class="codehilite"><pre><span></span><span class="x">\WP_Post::get_instance( $id );</span>
+</pre></div>
+
+
+<p>Then, GraphQL passes the Post down to the fields to be resolved. The fields use the Post as context to resolve the <code>id</code>, <code>title</code>, and <code>customField</code>. </p>
+<p>Once all fields are resolved, GraphQL returns the response in JSON format. </p>
                 
                   
                 
