@@ -27,7 +27,7 @@
         }, 
         {
             "location": "/install-and-activate/", 
-            "text": "Recommended Version\n\n\nFor the most stable and performant experience, it's recommended that you use the \nmost recent\n version of the plugin. You can \nsee the latest releases here\n.\n\n\nOf course, as new features are in development, feel free to check out the latest \ndevelop\n branch or check out any other feature or release.\n\n\nDownload / Clone the Plugin\n\n\nWPGraphQL is available on Github: \nhttps://github.com/wp-graphql/wp-graphql\n\n\nYou can download the plugin or clone the plugin from \nGithub\n.\n\n\nAdd the downloaded/cloned plugin to your WordPress plugin directory. On a typical WordPress install, this is located at \n/wp-content/plugins\n\n\n\n\nNOTE:\n The plugin directory should be \nwp-graphql\n and not something like \nwp-graphql-master\n or \nwp-graphql-develop\n\n\n\n\nActivate the Plugin\n\n\nOnce the plugin is in the WordPress plugins directory, it can be activated by clicking \"Activate\" on the plugin screen, or via WP CLI \nwp plugin activate wp-graphql\n\n\nVerify the Endpoint Works\n\n\nThe most common use of WPGraphQL is as an API endpoint that can be accessed via HTTP requests (\nalthough it can be used without remote HTTP requests as well\n)\n\n\nIn order for the \n/graphql\n endpoint to work, you must have \npretty permalinks\n enabled and any permalink structure \nother\n than the default WordPress permalink structure.\n\n\nOnce the plugin is active, your site should have a \nyoursite.com/graphql\n endpoint and you the expected response is a JSON payload like so:\n\n\n{\n\n    \nerrors\n:\n \n[\n\n        \n{\n\n            \nmessage\n:\n \nGraphQL requests must be a POST or GET Request with a valid query\n,\n\n            \ncategory\n:\n \nuser\n\n        \n}\n\n    \n]\n\n\n}\n\n\n\n\n\n\nIf you see anything else, such as your site's 404 page, you may need to \nflush permalinks\n.\n\n\nFlush Permalinks\n\n\nActivating the plugin \nshould\n cause the permalinks to flush. Occasionally, this doesn't work. If you have a permalink structure other than the default WordPress structure, and the plugin is active but nothing shows at your site's \n/graphql\n endpoint, try to manually flush your permalinks by:\n\n\n\n\nFrom your WordPress dashboard, visit the \nSettings \n Permalinks\n page. Just visiting the page should flush the permalinks\n\n\n\n\nor\n\n\n\n\nUsing WP CLI run \nwp rewrite flush\n\n\n\n\nUsing the Plugin without the /graphql Endpoint\n\n\nWPGraphQL can be used from the context of WordPress PHP and doesn't require HTTP requests to be used. You can completely remove the \n/graphql\n endpoint that the plugin provides so that the API is not available publicly in \nany way\n but still use GraphQL in your plugin and theme code by using:\n\n\ndo_graphql_request()\n\n\n\n\n\n\nLearn more about using WPGraphQL in PHP, without making HTTP requests\n.", 
+            "text": "Recommended Version\n\n\nFor the most stable and performant experience, it's recommended that you use the \nmost recent\n version of the plugin. You can \nsee the latest releases here\n.\n\n\nOf course, as new features are in development, feel free to check out the latest \ndevelop\n branch or check out any other feature or release.\n\n\nDownload / Clone the Plugin\n\n\nWPGraphQL is available on Github: \nhttps://github.com/wp-graphql/wp-graphql\n\n\nYou can download the plugin or clone the plugin from \nGithub\n.\n\n\nAdd the downloaded/cloned plugin to your WordPress plugin directory. On a typical WordPress install, this is located at \n/wp-content/plugins\n\n\n\n\nNote\n\n\nThe plugin directory should be \nwp-graphql\n and not something like \nwp-graphql-master\n or \nwp-graphql-develop\n\n\n\n\nActivate the Plugin\n\n\nOnce the plugin is in the WordPress plugins directory, it can be activated by clicking \"Activate\" on the plugin screen, or via WP CLI \nwp plugin activate wp-graphql\n\n\nVerify the Endpoint Works\n\n\nThe most common use of WPGraphQL is as an API endpoint that can be accessed via HTTP requests (\nalthough it can be used without remote HTTP requests as well\n)\n\n\nIn order for the \n/graphql\n endpoint to work, you must have \npretty permalinks\n enabled and any permalink structure \nother\n than the default WordPress permalink structure.\n\n\nOnce the plugin is active, your site should have a \nyoursite.com/graphql\n endpoint and you the expected response is a JSON payload like so:\n\n\n{\n\n    \nerrors\n:\n \n[\n\n        \n{\n\n            \nmessage\n:\n \nGraphQL requests must be a POST or GET Request with a valid query\n,\n\n            \ncategory\n:\n \nuser\n\n        \n}\n\n    \n]\n\n\n}\n\n\n\n\n\n\nIf you see anything else, such as your site's 404 page, you may need to \nflush permalinks\n.\n\n\nFlush Permalinks\n\n\nActivating the plugin \nshould\n cause the permalinks to flush. Occasionally, this doesn't work. If you have a permalink structure other than the default WordPress structure, and the plugin is active but nothing shows at your site's \n/graphql\n endpoint, try to manually flush your permalinks by:\n\n\n\n\nFrom your WordPress dashboard, visit the \nSettings \n Permalinks\n page. Just visiting the page should flush the permalinks\n\n\n\n\nor\n\n\n\n\nUsing WP CLI run \nwp rewrite flush\n\n\n\n\nUsing the Plugin without the /graphql Endpoint\n\n\nWPGraphQL can be used from the context of WordPress PHP and doesn't require HTTP requests to be used. You can completely remove the \n/graphql\n endpoint that the plugin provides so that the API is not available publicly in \nany way\n but still use GraphQL in your plugin and theme code by using:\n\n\ndo_graphql_request()\n\n\n\n\n\n\nLearn more about using WPGraphQL in PHP, without making HTTP requests\n.", 
             "title": "Plugin Install & Activation"
         }, 
         {
@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/install-and-activate/#download-clone-the-plugin", 
-            "text": "WPGraphQL is available on Github:  https://github.com/wp-graphql/wp-graphql  You can download the plugin or clone the plugin from  Github .  Add the downloaded/cloned plugin to your WordPress plugin directory. On a typical WordPress install, this is located at  /wp-content/plugins   NOTE:  The plugin directory should be  wp-graphql  and not something like  wp-graphql-master  or  wp-graphql-develop", 
+            "text": "WPGraphQL is available on Github:  https://github.com/wp-graphql/wp-graphql  You can download the plugin or clone the plugin from  Github .  Add the downloaded/cloned plugin to your WordPress plugin directory. On a typical WordPress install, this is located at  /wp-content/plugins   Note  The plugin directory should be  wp-graphql  and not something like  wp-graphql-master  or  wp-graphql-develop", 
             "title": "Download / Clone the Plugin"
         }, 
         {
@@ -62,13 +62,23 @@
         }, 
         {
             "location": "/quickstart/frontend/", 
-            "text": "", 
+            "text": "WPGraphQL Quickstart - Frontend\n\n\n\n\nComing Soon\n\n\nThis will be a resource to help folks get up and running using WPGraphQL on the front-end as fast as possible. \nIt will likely do something with Create React App and Apollo Client to show how easy it is to build Single Page Apps\nand hydrating data from WordPress via WPGraphQL.", 
             "title": "Frontend"
         }, 
         {
+            "location": "/quickstart/frontend/#wpgraphql-quickstart-frontend", 
+            "text": "Coming Soon  This will be a resource to help folks get up and running using WPGraphQL on the front-end as fast as possible. \nIt will likely do something with Create React App and Apollo Client to show how easy it is to build Single Page Apps\nand hydrating data from WordPress via WPGraphQL.", 
+            "title": "WPGraphQL Quickstart - Frontend"
+        }, 
+        {
             "location": "/quickstart/backend/", 
-            "text": "", 
+            "text": "WPGraphQL Quickstart - Backend\n\n\n\n\nComing Soon\n\n\nThis will be a resource to help folks get up and running customizing the WPGraphQL Schema. This will likely show how\nto build a custom plugin that extends WPGraphQL, and will show basics like adding Custom Post Types and \nCustom Taxonomies to the WPGraphQL Schema, adding custom fields, adding custom mutations, overriding field resolvers and\nworking with Authentication. This might also touch on Unit testing code that extends WPGraphQL :thinking:", 
             "title": "Backend"
+        }, 
+        {
+            "location": "/quickstart/backend/#wpgraphql-quickstart-backend", 
+            "text": "Coming Soon  This will be a resource to help folks get up and running customizing the WPGraphQL Schema. This will likely show how\nto build a custom plugin that extends WPGraphQL, and will show basics like adding Custom Post Types and \nCustom Taxonomies to the WPGraphQL Schema, adding custom fields, adding custom mutations, overriding field resolvers and\nworking with Authentication. This might also touch on Unit testing code that extends WPGraphQL :thinking:", 
+            "title": "WPGraphQL Quickstart - Backend"
         }, 
         {
             "location": "/tutorials/using-graphiql-to-explore-docs-and-schema/", 
@@ -124,6 +134,31 @@
             "location": "/reference/extensions/", 
             "text": "", 
             "title": "Extensions"
+        }, 
+        {
+            "location": "/reference/tooling/", 
+            "text": "GraphQL Tooling\n\n\nOne of the big benefits of the GraphQL Type spec is that it lends itself to great tooling.\n\n\nThis is a list of tools that make it easy to work with GraphQL (either generally, or specific to WPGraphQL). \n\n\nGraphiQL\n\n\nGraphiQL is an open source in-browser GraphQL IDE tool created and maintained by Facebook. It makes it easy to interact with and debug GraphQL requests and explore a GraphQL Schema.\n\n\nBelow is a list of various GraphiQL implementations:\n\n\n\n\nGraphiQL Desktop App\n:\n GraphiQL as an Electron desktop app \n\n\nFWIW, this is the tool we use for our documentation demos / screenshots. \n\n\n\n\n\n\nWPGraphiQL\n:\n WordPress plugin that adds GraphiQL to the WordPress admin dashboard", 
+            "title": "Tooling"
+        }, 
+        {
+            "location": "/reference/tooling/#graphql-tooling", 
+            "text": "One of the big benefits of the GraphQL Type spec is that it lends itself to great tooling.  This is a list of tools that make it easy to work with GraphQL (either generally, or specific to WPGraphQL).", 
+            "title": "GraphQL Tooling"
+        }, 
+        {
+            "location": "/reference/tooling/#graphiql", 
+            "text": "GraphiQL is an open source in-browser GraphQL IDE tool created and maintained by Facebook. It makes it easy to interact with and debug GraphQL requests and explore a GraphQL Schema.  Below is a list of various GraphiQL implementations:   GraphiQL Desktop App :  GraphiQL as an Electron desktop app   FWIW, this is the tool we use for our documentation demos / screenshots.     WPGraphiQL :  WordPress plugin that adds GraphiQL to the WordPress admin dashboard", 
+            "title": "GraphiQL"
+        }, 
+        {
+            "location": "/reference/unit-tests/", 
+            "text": "Unit Tests", 
+            "title": "Unit Tests"
+        }, 
+        {
+            "location": "/reference/unit-tests/#unit-tests", 
+            "text": "", 
+            "title": "Unit Tests"
         }, 
         {
             "location": "/faq/", 

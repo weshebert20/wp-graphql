@@ -105,6 +105,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://wpgraphql.github.io/wp-graphql//reference/tooling/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wpgraphql.github.io/wp-graphql//reference/unit-tests/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
