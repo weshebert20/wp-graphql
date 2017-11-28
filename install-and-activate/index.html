@@ -72,10 +72,6 @@
         
             <li><a class="toctree-l3" href="#verify-the-endpoint-works">Verify the Endpoint Works</a></li>
         
-            <li><a class="toctree-l3" href="#using-the-plugin-without-the-graphql-endpoint">Using the Plugin without the /graphql Endpoint</a></li>
-        
-            <li><a class="toctree-l3" href="#flush-permalinks">Flush Permalinks</a></li>
-        
         </ul>
     
 
@@ -199,7 +195,7 @@
 <blockquote>
 <p><strong>NOTE:</strong> The plugin directory should be <code>wp-graphql</code> and not something like <code>wp-graphql-master</code> or <code>wp-graphql-develop</code></p>
 </blockquote>
-<h3 id="recommended-version">Recommended Version</h3>
+<h4 id="recommended-version">Recommended Version</h4>
 <p>For the most stable and performant experience, it's recommended that you use the <em>most recent</em> version of the plugin. You can <a href="https://github.com/wp-graphql/wp-graphql/releases">see the latest releases here</a>.</p>
 <p>Of course, as new features are in development, feel free to check out the latest <code>develop</code> branch or check out any other feature or release.</p>
 <h2 id="activate-the-plugin">Activate the Plugin</h2>
@@ -219,13 +215,13 @@
 </code></pre>
 
 <p>If you see anything else, such as your site's 404 page, you may need to <a href="#flush-permalinks">flush permalinks</a>.</p>
-<h3 id="using-the-plugin-without-the-graphql-endpoint">Using the Plugin without the /graphql Endpoint</h3>
+<h4 id="using-the-plugin-without-the-graphql-endpoint">Using the Plugin without the /graphql Endpoint</h4>
 <p>WPGraphQL can be used from the context of WordPress PHP and doesn't require HTTP requests to be used. You can completely remove the <code>/graphql</code> endpoint that the plugin provides so that the API is not available publicly in <em>any way</em> but still use GraphQL in your plugin and theme code by using:</p>
 <pre><code class="php">do_graphql_request()
 </code></pre>
 
 <p><a href="../tutorials/use-graphql-in-php-without-http-request/">I want to learn more about using WPGraphQL in PHP, without making HTTP requests</a>.</p>
-<h3 id="flush-permalinks">Flush Permalinks</h3>
+<h4 id="flush-permalinks">Flush Permalinks</h4>
 <p>Activating the plugin <em>should</em> cause the permalinks to flush. Occasionally, this doesn't work. If you have a permalink structure other than the default WordPress structure, and the plugin is active but nothing shows at your site's <code>/graphql</code> endpoint, try to manually flush your permalinks by:</p>
 <ul>
 <li>From your WordPress dashboard, visit the <em><strong>Settings &gt; Permalinks</strong></em> page. Just visiting the page should flush the permalinks</li>
