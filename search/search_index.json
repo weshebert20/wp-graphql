@@ -1,52 +1,52 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "WPGraphQL Docs \n Reference\n\n\nWPGraphQL is a free, open-source WordPress plugin that adds a GraphQL API to your WordPress site.\n\n\nHere you can read about major concepts, dive into technical details or follow practical examples to learn how WPGraphQL works.\n\n\nBeta Software Notice\n\n\nUntil WPGraphQL hits a \n1.0.0 release\n, it is still considered beta software. This doesn't mean that the plugin isn't ready for use, it just means that there \nmight\n still be \nbugs\n and that there \nmight\n be breaking changes to the shape of the API or internal functions as we work toward a stable release.\n\n\nDon't hesitate to start using the plugin, but just be sure to follow along with \nreleases\n and keep up to date with conversations in \nSlack (join here)\n\n\nWPGraphQL is already in use in production on several sites, including \nwork.qz.com\n, \nhopelabs.org\n and more.\n\n\nPlugin Install and Activation\n\n\nIn order to use WPGraphQL, the plugin needs to be installed and activated on a WordPress install.\n\n\nTake me to the Plugin Install and Activation Guide\n\n\nQuick Start\n\n\nIf you want to skip all the details and get straight to some examples of how to use WPGraphQL, the Quick Start might be for you.\n\n\nTake me to the Quick Start\n\n\nTutorials\n\n\nTutorials walk you through practical examples that demonstrate the features of WPGraphQL.\n\n\nTake me to the Tutorials\n\n\nReference\n\n\nThe reference describes the internals of WPGraphQL on a technical level.\n\n\nTake me to the Reference\n\n\nFAQs\n\n\nDo you have Specific questions about WPGraphQL? Check out our FAQs.\n\n\nTake me to the FAQs\n\n\nCommunity \n Support\n\n\nHave you discovered a bug, or have questions that aren't addressed in the Tutorials, Reference and FAQs? Or maybe you have an idea to make WPGraphQL better or just want to connect with other people using WPGraphQL? If that sounds like you, check out our Community \n Support info.\n\n\nTake me to Community \n Support\n\n\nRoadmap / Contributing\n\n\nAre you looking for info on where the plugin is headed and how you can get involved? Check out our Roadmap and Contribting info.\n\n\nTake me to Roadmap / Contributing", 
-            "title": "About"
+            "location": "/introduction/", 
+            "text": "WPGraphQL\n\n\nWebsite\n \u2022\u00a0\nApiGen Code Docs\n \u2022\u00a0\nSlack\n\n\nGraphQL API for WordPress.\n\n\n\n\n\n\nWPGraphQL is a free, open-source WordPress plugin that adds a GraphQL API to your WordPress site.\n\n\nHere you can read about major concepts, dive into technical details or follow practical examples to learn how WPGraphQL works.\n\n\nBeta Software Notice\n\n\nUntil WPGraphQL hits a \n1.0.0 release\n, it is still considered beta software. This doesn't mean that the plugin isn't ready for use, it just means that there \nmight\n still be \nbugs\n and that there \nmight\n be breaking changes to the shape of the API or internal functions as we work toward a stable release.\n\n\nDon't hesitate to start using the plugin, but just be sure to follow along with \nreleases\n and keep up to date with conversations in \nSlack (join here)\n\n\nWPGraphQL is already in use in production on several sites, including \nwork.qz.com\n, \nhopelabs.org\n and more.\n\n\nPlugin Install and Activation\n\n\nIn order to use WPGraphQL, the plugin needs to be installed and activated on a WordPress install.\n\n\nTake me to the Plugin Install and Activation Guide\n\n\nQuick Start\n\n\nIf you want to skip all the details and get straight to some examples of how to use WPGraphQL, the Quick Start might be for you.\n\n\nTake me to the Frontend Quick Start\n or \nTake me to the Backend Quick Start\n\n\nTutorials\n\n\nTutorials walk you through practical examples that demonstrate the features of WPGraphQL.\n\n\nTake me to the Tutorials\n\n\nReference\n\n\nThe reference describes the internals of WPGraphQL on a technical level.\n\n\nTake me to the Reference\n\n\nFAQs\n\n\nDo you have Specific questions about WPGraphQL? Check out our FAQs.\n\n\nTake me to the FAQs\n\n\nCommunity \n Support\n\n\nHave you discovered a bug, or have questions that aren't addressed in the Tutorials, Reference and FAQs? Or maybe you have an idea to make WPGraphQL better or just want to connect with other people using WPGraphQL? If that sounds like you, check out our Community \n Support info.\n\n\nTake me to Community \n Support\n\n\nRoadmap / Contributing\n\n\nAre you looking for info on where the plugin is headed and how you can get involved? Check out our Roadmap and Contribting info.\n\n\nTake me to Roadmap / Contributing", 
+            "title": "Introduction"
         }, 
         {
-            "location": "/#wpgraphql-docs-reference", 
-            "text": "WPGraphQL is a free, open-source WordPress plugin that adds a GraphQL API to your WordPress site.  Here you can read about major concepts, dive into technical details or follow practical examples to learn how WPGraphQL works.", 
-            "title": "WPGraphQL Docs &amp; Reference"
+            "location": "/introduction/#wpgraphql", 
+            "text": "Website  \u2022\u00a0 ApiGen Code Docs  \u2022\u00a0 Slack  GraphQL API for WordPress.    WPGraphQL is a free, open-source WordPress plugin that adds a GraphQL API to your WordPress site.  Here you can read about major concepts, dive into technical details or follow practical examples to learn how WPGraphQL works.", 
+            "title": "WPGraphQL"
         }, 
         {
-            "location": "/#beta-software-notice", 
+            "location": "/introduction/#beta-software-notice", 
             "text": "Until WPGraphQL hits a  1.0.0 release , it is still considered beta software. This doesn't mean that the plugin isn't ready for use, it just means that there  might  still be  bugs  and that there  might  be breaking changes to the shape of the API or internal functions as we work toward a stable release.  Don't hesitate to start using the plugin, but just be sure to follow along with  releases  and keep up to date with conversations in  Slack (join here)  WPGraphQL is already in use in production on several sites, including  work.qz.com ,  hopelabs.org  and more.", 
             "title": "Beta Software Notice"
         }, 
         {
-            "location": "/#plugin-install-and-activation", 
+            "location": "/introduction/#plugin-install-and-activation", 
             "text": "In order to use WPGraphQL, the plugin needs to be installed and activated on a WordPress install.  Take me to the Plugin Install and Activation Guide", 
             "title": "Plugin Install and Activation"
         }, 
         {
-            "location": "/#quick-start", 
-            "text": "If you want to skip all the details and get straight to some examples of how to use WPGraphQL, the Quick Start might be for you.  Take me to the Quick Start", 
+            "location": "/introduction/#quick-start", 
+            "text": "If you want to skip all the details and get straight to some examples of how to use WPGraphQL, the Quick Start might be for you.  Take me to the Frontend Quick Start  or  Take me to the Backend Quick Start", 
             "title": "Quick Start"
         }, 
         {
-            "location": "/#tutorials", 
+            "location": "/introduction/#tutorials", 
             "text": "Tutorials walk you through practical examples that demonstrate the features of WPGraphQL.  Take me to the Tutorials", 
             "title": "Tutorials"
         }, 
         {
-            "location": "/#reference", 
+            "location": "/introduction/#reference", 
             "text": "The reference describes the internals of WPGraphQL on a technical level.  Take me to the Reference", 
             "title": "Reference"
         }, 
         {
-            "location": "/#faqs", 
+            "location": "/introduction/#faqs", 
             "text": "Do you have Specific questions about WPGraphQL? Check out our FAQs.  Take me to the FAQs", 
             "title": "FAQs"
         }, 
         {
-            "location": "/#community-support", 
+            "location": "/introduction/#community-support", 
             "text": "Have you discovered a bug, or have questions that aren't addressed in the Tutorials, Reference and FAQs? Or maybe you have an idea to make WPGraphQL better or just want to connect with other people using WPGraphQL? If that sounds like you, check out our Community   Support info.  Take me to Community   Support", 
             "title": "Community &amp; Support"
         }, 
         {
-            "location": "/#roadmap-contributing", 
+            "location": "/introduction/#roadmap-contributing", 
             "text": "Are you looking for info on where the plugin is headed and how you can get involved? Check out our Roadmap and Contribting info.  Take me to Roadmap / Contributing", 
             "title": "Roadmap / Contributing"
         }, 
@@ -152,6 +152,11 @@
         }, 
         {
             "location": "/faq/", 
+            "text": "FAQ", 
+            "title": "FAQ"
+        }, 
+        {
+            "location": "/faq/#faq", 
             "text": "", 
             "title": "FAQ"
         }
