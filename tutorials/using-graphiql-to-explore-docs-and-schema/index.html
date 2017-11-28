@@ -315,10 +315,66 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Using GraphiQL to explore the Schema and Docs
+      </label>
     
     <a href="./" title="Using GraphiQL to explore the Schema and Docs" class="md-nav__link md-nav__link--active">
       Using GraphiQL to explore the Schema and Docs
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphiql-tools-you-can-use" title="GraphiQL Tools You Can Use" class="md-nav__link">
+    GraphiQL Tools You Can Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-graphiql" title="Configure GraphiQL" class="md-nav__link">
+    Configure GraphiQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point-it-at-your-endpoint" title="Point it at your endpoint" class="md-nav__link">
+    Point it at your endpoint
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-your-schema-docs" title="Explore your Schema Docs" class="md-nav__link">
+    Explore your Schema Docs
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -539,6 +595,62 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#graphiql-tools-you-can-use" title="GraphiQL Tools You Can Use" class="md-nav__link">
+    GraphiQL Tools You Can Use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-graphiql" title="Configure GraphiQL" class="md-nav__link">
+    Configure GraphiQL
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#point-it-at-your-endpoint" title="Point it at your endpoint" class="md-nav__link">
+    Point it at your endpoint
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-your-schema-docs" title="Explore your Schema Docs" class="md-nav__link">
+    Explore your Schema Docs
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -547,9 +659,54 @@
                   <a href="https://github.com/wp-graphql/wp-graphql/edit/master/docs/tutorials/using-graphiql-to-explore-docs-and-schema.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Using GraphiQL to explore the Schema and Docs</h1>
-                
-                
+                <h1 id="using-graphiql-to-explore-wpgraphql">Using GraphiQL to explore WPGraphQL<a class="headerlink" href="#using-graphiql-to-explore-wpgraphql" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/graphql/graphiql">GraphiQL</a> is the de-facto tool for interacting with a GraphQL Schema. It's an open source graphical interactive in-browser GraphQL IDE. </p>
+<p>It allows users to explore a GraphQL Schema's documentation, and execute GraphQL queries and mutations and see the response in real time.</p>
+<p>GraphiQL itself is a React component, so to use it, you need to either implement the React component, or use something that implements it already.</p>
+<h2 id="graphiql-tools-you-can-use">GraphiQL Tools You Can Use<a class="headerlink" href="#graphiql-tools-you-can-use" title="Permanent link">&para;</a></h2>
+<p>Below is a (non-comprehensive) list of tools that implement GraphiQL that you can use to explore and experiment with your WPGraphQL API.</p>
+<ul>
+<li><strong><a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>:</strong> GraphiQL as an Electron desktop app <ul>
+<li>FWIW, this is the tool we use for our documentation demos / screenshots. </li>
+</ul>
+</li>
+<li><strong><a href="https://github.com/wp-graphql/wp-graphiql">WPGraphiQL</a>:</strong> WordPress plugin that adds GraphiQL to the WordPress admin dashboard </li>
+<li><strong><a href="https://github.com/graphcool/graphql-playground/releases">GraphQL Playground</a>:</strong> Desktop App from the folks at Graph.Cool.</li>
+<li><strong><a href="https://github.com/andev-software/graphql-ide">GraphQL IDE</a>:</strong> Desktop App that supports multiple endpoint configurations</li>
+<li><strong><a href="https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja?hl=en">Altair</a>:</strong> Chrome Extension</li>
+<li><strong><a href="https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij?hl=en">ChromiQL</a>:</strong> Chrome Extension</li>
+</ul>
+<p>For the sake of this guide, we will use <a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>, but feel free to explore the others, or
+if you so dare, build your own!</p>
+<h2 id="configure-graphiql">Configure GraphiQL<a class="headerlink" href="#configure-graphiql" title="Permanent link">&para;</a></h2>
+<p>Once you have a WordPress install setup with the <a href="../../install-and-activate/">WPGraphQL plugin installed and activated</a> 
+and the GraphiQL Desktop App (or other GraphiQL tool) <a href="https://github.com/skevy/graphiql-app#installation">installed</a>, 
+the first thing you will want to do is point it at your WPGraphQL endpoint.</p>
+<p>When the app is first opened, you may notice a blank right pane, or an error showing that GraphiQL failed to fetch. </p>
+<p><img alt="GraphiQL Error when first opening the app" src="../../assets/images/graphiql-01-error-when-opening-app.png" /></p>
+<p>This is because GraphiQL isn't pointed to a valid GraphQL endpoint.</p>
+<h3 id="point-it-at-your-endpoint">Point it at your endpoint<a class="headerlink" href="#point-it-at-your-endpoint" title="Permanent link">&para;</a></h3>
+<p>Toward the top of the App is a "GraphQL Endpoint" text field where you can paste in a URL to your WPGraphQL endpoint.</p>
+<p>I have a local WordPress install running at <code>wpgraphql.dev</code>, so my endpoint is <code>http://wpgraphql.dev/graphql</code></p>
+<p>When I paste in my WPGraphQL url, the error goes away. This is because the App went and fetched my GraphQL schema and populated the GraphQL Documentation pane.</p>
+<p><img alt="GraphiQL Paste in URL" src="../../assets/images/graphiql-02-paste-url.gif" /></p>
+<h2 id="explore-your-schema-docs">Explore your Schema Docs<a class="headerlink" href="#explore-your-schema-docs" title="Permanent link">&para;</a></h2>
+<p>At this point, GraphiQL has fetched your WPGraphQL Schema and generated documentation that you can browse. </p>
+<p>At the top left of GraphiQL, you should see a "&lt; Docs" link.</p>
+<p>Clicking that expands the Documentation panel.</p>
+<p><img alt="GraphiQL Open Docs" src="../../assets/images/graphiql-03-open-docs.gif" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can adjust the width of the Documentation panel to your liking by selecting the left border of the panel and dragging and dropping.</p>
+</div>
+<p>From the Documentation panel, you can see that at the root of the WPGraphQL Schema is <code>query: RootQuery</code> and <code>mutation: RootMutation</code>. </p>
+<p>These are the root entry points to the WordPress Application Data Graph.</p>
+<p>You can click into either to explore the capabilities nested below. </p>
+<p>For example, clicking <code>RooyQuery</code> displays the fields that are available as part of the root. You can scroll through the list to see what's available. what the description is, what Type will be returned, and what arguments the field accepts.</p>
+<p><img alt="GraphiQL Explore Root Query" src="../../assets/images/graphiql-04-explore-root-query.gif" /></p>
+<p>When looking at the GraphQL Docs, it might be overwhelming trying to understand what everything is that you're seeing. </p>
+<p>Her'es an annotated breakdown of what is displayed in the Documentation panel as you explore the docs.</p>
+<p><img alt="GraphiQL Annotated Docs" src="../../assets/images/graphiql-05-field-annotation.png" /></p>
                 
                   
                 
