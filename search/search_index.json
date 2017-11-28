@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "WPGraphQL", 
+            "title": "About"
+        }, 
+        {
+            "location": "/#wpgraphql", 
+            "text": "", 
+            "title": "WPGraphQL"
+        }
+    ]
+}
