@@ -179,6 +179,26 @@
             "location": "/faq/#faq", 
             "text": "", 
             "title": "FAQ"
+        }, 
+        {
+            "location": "/contributing/", 
+            "text": "Contributing", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#contributing", 
+            "text": "", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/community-and-support/", 
+            "text": "Support", 
+            "title": "Community & Support"
+        }, 
+        {
+            "location": "/community-and-support/#support", 
+            "text": "", 
+            "title": "Support"
         }
     ]
 }
