@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Plugin Install & Activation - wp-graphql</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Plugin Install & Activation";
+    var mkdocs_page_input_path = "install-and-activate.md";
+    var mkdocs_page_url = "/install-and-activate/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> wp-graphql</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">About</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Plugin Install & Activation</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#plugin-install-activation">Plugin Install &amp; Activation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#wpgraphql-is-a-wordpress-plugin-that-adds-a-graphql-api-to-your-wordpress-site">WPGraphQL is a WordPress plugin that adds a GraphQL API to your WordPress site.</a></li>
+        
+            <li><a class="toctree-l3" href="#download-the-plugin">Download the Plugin</a></li>
+        
+            <li><a class="toctree-l3" href="#activate-the-plugin">Activate the Plugin</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Quickstart</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../quickstart/frontend/">Frontend</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../quickstart/backend/">Backend</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../tutorials/using-graphiql-to-explore-docs-and-schema/">Using GraphiQL to explore the Schema and Docs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/custom-post-types-and-taxonomies/">Custom Post Types & Taxonomies</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/add-fields-to-schema/">Adding Fields to the Schema</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/use-graphql-in-php-without-http-request/">Using WPGraphQL in PHP without HTTP requests</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/override-field-resolvers/">Overriding Field Resolvers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/unit-testing-wpgraphql/">Unit Testing WPGraphQL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../tutorials/unit-testing-extensions/">Unit Testing your code that extends WPGraphQL</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">reference</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../reference/types-and-schema/">GraphQL Types & Schema</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../reference/actions-filters/">Actions & Filters</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../reference/auth/">Auth</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../reference/extensions/">Extensions</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../faq/">FAQ</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">wp-graphql</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Plugin Install & Activation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="plugin-install-activation">Plugin Install &amp; Activation</h1>
+<h3 id="wpgraphql-is-a-wordpress-plugin-that-adds-a-graphql-api-to-your-wordpress-site">WPGraphQL is a WordPress plugin that adds a GraphQL API to your WordPress site.</h3>
+<h2 id="download-the-plugin">Download the Plugin</h2>
+<p>WPGraphQL is available on Github: <a href="https://github.com/wp-graphql/wp-graphql">https://github.com/wp-graphql/wp-graphql</a></p>
+<p>You can download the plugin or clone the plugin from <a href="https://github.com/wp-graphql/wp-graphql">Github</a>.</p>
+<p>Add the downloaded/cloned plugin to your WordPress plugin directory. On a typical WordPress install, this is located at <code>/wp-content/plugins</code></p>
+<blockquote>
+<p><strong>NOTE:</strong> The plugin directory should be <code>wp-graphql</code> and not something like <code>wp-graphql-master</code> or <code>wp-graphql-develop</code></p>
+</blockquote>
+<h3 id="recommended-version">Recommended Version</h3>
+<p>For the most stable and performant experience, it's recommended that you use the <em>most recent</em> version of the plugin. You can <a href="https://github.com/wp-graphql/wp-graphql/releases">see the latest releases here</a>.</p>
+<p>Of course, as new features are in development, feel free to check out the latest <code>develop</code> branch or check out any other feature or release.</p>
+<h2 id="activate-the-plugin">Activate the Plugin</h2>
+<p>Once the plugin is in the WordPress plugins directory, it can be activated by clicking "Activate" on the plugin screen, or via WP CLI <code>wp plugin activate wp-graphql</code></p>
+<h3 id="verify-the-endpoint-works">Verify the Endpoint Works</h3>
+<p>The most common use of WPGraphQL is as an API endpoint that can be accessed via HTTP requests (<a href="#using-the-plugin-without-the-graphql-endpoint">although it can be used without remote HTTP requests as well</a>)</p>
+<p>In order for the <code>/graphql</code> endpoint to work, you must have <a href="https://codex.wordpress.org/Using_Permalinks">pretty permalinks</a> enabled and any permalink structure <em>other</em> than the default WordPress permalink structure.</p>
+<p>Once the plugin is active, your site should have a <code>yoursite.com/graphql</code> endpoint and you the expected response is a JSON payload like so:</p>
+<pre><code>{
+    &quot;errors&quot;: [
+        {
+            &quot;message&quot;: &quot;GraphQL requests must be a POST or GET Request with a valid query&quot;,
+            &quot;category&quot;: &quot;user&quot;
+        }
+    ]
+}
+</code></pre>
+
+<p>If you see anything else, such as your site's 404 page, you may need to <a href="#flush-permalinks">flush permalinks</a>.</p>
+<h3 id="using-the-plugin-without-the-graphql-endpoint">Using the Plugin without the /graphql Endpoint</h3>
+<p>WPGraphQL can be used from the context of WordPress PHP and doesn't require HTTP requests to be used. You can completely remove the <code>/graphql</code> endpoint that the plugin provides so that the API is not available publicly in <em>any way</em> but still use GraphQL in your plugin and theme code by using:</p>
+<pre><code class="php">do_graphql_request()
+</code></pre>
+
+<p><a href="../tutorials/use-graphql-in-php-without-http-request/">I want to learn more about using WPGraphQL in PHP, without making HTTP requests</a>.</p>
+<h3 id="flush-permalinks">Flush Permalinks</h3>
+<p>Activating the plugin <em>should</em> cause the permalinks to flush. Occasionally, this doesn't work. If you have a permalink structure other than the default WordPress structure, and the plugin is active but nothing shows at your site's <code>/graphql</code> endpoint, try to manually flush your permalinks by:</p>
+<ul>
+<li>From your WordPress dashboard, visit the <em><strong>Settings &gt; Permalinks</strong></em> page. Just visiting the page should flush the permalinks</li>
+</ul>
+<p>or</p>
+<ul>
+<li>Using WP CLI run <code>wp rewrite flush</code></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../quickstart/frontend/" class="btn btn-neutral float-right" title="Frontend">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="About"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../quickstart/frontend/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

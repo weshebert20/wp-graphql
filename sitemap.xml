@@ -9,4 +9,110 @@
     </url>
     
 
+    
+    <url>
+     <loc>/install-and-activate/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/quickstart/frontend/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/quickstart/backend/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/tutorials/using-graphiql-to-explore-docs-and-schema/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/custom-post-types-and-taxonomies/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/add-fields-to-schema/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/use-graphql-in-php-without-http-request/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/override-field-resolvers/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/unit-testing-wpgraphql/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/tutorials/unit-testing-extensions/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/reference/types-and-schema/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/reference/actions-filters/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/reference/auth/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/reference/extensions/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/faq/</loc>
+     <lastmod>2017-11-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
 </urlset>
