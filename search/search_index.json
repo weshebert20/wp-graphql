@@ -173,22 +173,12 @@
         {
             "location": "/faq/", 
             "text": "FAQ", 
-            "title": "FAQ"
+            "title": "FAQs"
         }, 
         {
             "location": "/faq/#faq", 
             "text": "", 
             "title": "FAQ"
-        }, 
-        {
-            "location": "/contributing/", 
-            "text": "Contributing", 
-            "title": "Contributing"
-        }, 
-        {
-            "location": "/contributing/#contributing", 
-            "text": "", 
-            "title": "Contributing"
         }, 
         {
             "location": "/community-and-support/", 
@@ -199,6 +189,16 @@
             "location": "/community-and-support/#support", 
             "text": "", 
             "title": "Support"
+        }, 
+        {
+            "location": "/contributing/", 
+            "text": "Contributing", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#contributing", 
+            "text": "", 
+            "title": "Contributing"
         }
     ]
 }
