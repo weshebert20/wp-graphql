@@ -58,13 +58,15 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
+      <link rel="stylesheet" href="../assets/css/extra.css">
+    
     
   </head>
   
     
     
     
-      <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+      <body data-md-color-primary="blue" data-md-color-accent="orange">
     
   
     <svg class="md-svg">
@@ -85,7 +87,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://wpgraphql.github.io/wp-graphql/" title="WPGraphQL" class="md-header-nav__button md-logo">
           
-            <img src="../images/wp-graphql-logo-white.svg" width="24" height="24">
+            <img src="../assets/images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -179,7 +181,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="../images/wp-graphql-logo-white.svg" width="24" height="24">
+        <img src="../assets/images/logo.png" width="24" height="24">
       
     </span>
     WPGraphQL
@@ -508,6 +510,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#whats-up-with-edges-and-nodes" title="What's up with "edges" and "nodes"?" class="md-nav__link">
+    What's up with "edges" and "nodes"?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naive-schema" title="Naive Schema" class="md-nav__link">
+    Naive Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-schema" title="Connection Schema" class="md-nav__link">
+    Connection Schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-many-houses-are-in-iowa" title="How many houses are in Iowa?" class="md-nav__link">
     How many houses are in Iowa?
   </a>
@@ -589,6 +618,33 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#whats-up-with-edges-and-nodes" title="What's up with "edges" and "nodes"?" class="md-nav__link">
+    What's up with "edges" and "nodes"?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naive-schema" title="Naive Schema" class="md-nav__link">
+    Naive Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-schema" title="Connection Schema" class="md-nav__link">
+    Connection Schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-many-houses-are-in-iowa" title="How many houses are in Iowa?" class="md-nav__link">
     How many houses are in Iowa?
   </a>
@@ -624,8 +680,118 @@
 <p>It's pretty common to want to expose Custom Post Type and Custom Taxonomies in WPGraphQL. We have tutorials written up on how to do this!</p>
 <p><a href="../tutorials/custom-post-types-and-taxonomies/">Learn more about using Custom Post Types &amp; Taxonomies with WPGraphQL</a></p>
 <h2 id="how-to-override-a-fields-resolver">How to override a field's resolver?<a class="headerlink" href="#how-to-override-a-fields-resolver" title="Permanent link">&para;</a></h2>
-<p>Sometimes you need granular control over how a specific field resolves. Field resolvers can easily be fitered so that you can control what is returned.</p>
+<p>Sometimes you need granular control over how a specific field resolves. Field resolvers can easily be filtered so that you can control what is returned.</p>
 <p><a href="../tutorials/override-field-resolvers/">Learn more about overriding Field resolvers</a></p>
+<h2 id="whats-up-with-edges-and-nodes">What's up with "edges" and "nodes"?<a class="headerlink" href="#whats-up-with-edges-and-nodes" title="Permanent link">&para;</a></h2>
+<p>GraphQL itself makes no mandates on the shape of a Schema. This is great, but can also be problematic as a poorly defined schema can be difficult to use, extend, and version.</p>
+<p>The shape of the WPGraphQL Schema is inspired heavily by the <a href="https://facebook.github.io/relay/docs/graphql-relay-specification.html">Relay spec</a>.</p>
+<p>The Relay spec introduces the concept of <a href="https://facebook.github.io/relay/docs/graphql-connections.html">Connections</a>. </p>
+<p>Let's compare what a naiive schema and a schema with Relay connections looks like.</p>
+<h3 id="naive-schema">Naive Schema<a class="headerlink" href="#naive-schema" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>{
+  posts {
+    id
+    title
+    date
+  }
+}
+</pre></div>
+
+
+<h3 id="connection-schema">Connection Schema<a class="headerlink" href="#connection-schema" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>{
+  posts {
+    edges {
+      node {
+        id
+        title
+        date
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<p>The <em>edges</em> serve as a place for where "edge" data can be exposed. The most common example is pagination cursors. </p>
+<p><strong>Pagination</strong></p>
+<p>In the <a href="#naive-schema">naiive schema</a>, we just get a list of posts back. There's no data exposed that references where each
+post belongs in the larger data set. For pagination to work well, we need to be able to pass data back in our next query
+to indicate what posts we want to query next. </p>
+<p>The cursor for a connection can be queried like so:</p>
+<div class="codehilite"><pre><span></span>{
+  posts {
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    edges {
+      cursor
+      node {
+        id
+        title
+        date
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<p>Here we ask for <code>pageInfo</code> on the connection itself, where we ask for the <code>startCursor</code> and <code>endCursor</code>. Additionally we ask for a cursor
+for each "node" in the connection. </p>
+<p>The cursor can be used as a reference to where in the overall data-set we are, and can be used to tell WPGraphQL where to start
+the next query.</p>
+<p>For example, if we queried for 10 items, and wanted to paginate through asking for the next 10 items, we could do so by first asking for 10 posts:</p>
+<div class="codehilite"><pre><span></span>{
+   posts( first: 10 ) {
+       pageInfo {
+         hasNextPage
+         hasPreviousPage
+         startCursor
+         endCursor
+       }
+       edges {
+         cursor
+         node {
+           id
+           title
+           date
+         }
+       }
+   }
+}
+</pre></div>
+
+
+<p>Then, we would store the <code>endCursor</code> as a variable <code>$endCursor = query.posts.pageInfo.endCursor</code> and use that to tell WPGraphQL where to start the next query, like so:</p>
+<div class="codehilite"><pre><span></span>{
+   posts( first: 10, after: $endCursor ) {
+       pageInfo {
+         hasNextPage
+         hasPreviousPage
+         startCursor
+         endCursor
+       }
+       edges {
+         cursor
+         node {
+           id
+           title
+           date
+         }
+       }
+   }
+}
+</pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Learn more about using Variables with GraphQL</p>
+<p>This is a basic example showing how to use variables. As you work with GraphQL more, there are better ways to handle variables in your GraphQL requests. <a href="http://graphql.org/learn/queries/#variables">Learn more about GraphQL variables</a></p>
+</div>
 <h2 id="how-many-houses-are-in-iowa">How many houses are in Iowa?<a class="headerlink" href="#how-many-houses-are-in-iowa" title="Permanent link">&para;</a></h2>
 <p>Not sure why this is frequently asked, but you won't find the answer here...</p>
 <h2 id="what-if-i-have-a-new-question">What if I have a new question?<a class="headerlink" href="#what-if-i-have-a-new-question" title="Permanent link">&para;</a></h2>

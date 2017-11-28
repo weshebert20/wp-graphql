@@ -58,13 +58,15 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
+      <link rel="stylesheet" href="./assets/css/extra.css">
+    
     
   </head>
   
     
     
     
-      <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+      <body data-md-color-primary="blue" data-md-color-accent="orange">
     
   
     <svg class="md-svg">
@@ -85,7 +87,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://wpgraphql.github.io/wp-graphql/" title="WPGraphQL" class="md-header-nav__button md-logo">
           
-            <img src="./images/wp-graphql-logo-white.svg" width="24" height="24">
+            <img src="./assets/images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -179,7 +181,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="./images/wp-graphql-logo-white.svg" width="24" height="24">
+        <img src="./assets/images/logo.png" width="24" height="24">
       
     </span>
     WPGraphQL
@@ -634,29 +636,21 @@ and keep up to date with conversations in <a href="https://wpgraphql.com/communi
 <h2 id="why-use-wpgraphql">Why use WPGraphQL?<a class="headerlink" href="#why-use-wpgraphql" title="Permanent link">&para;</a></h2>
 <p>WPGraphQL is arguably the easiest <em>and</em> most efficient way to interact with WordPress data.</p>
 <p>GraphQL enables small, efficient responses by only retrieving and returning exactly what was asked for, and nothing more.</p>
-<p>GraphQL helps reduce:</p>
+<p>WPGraphQL helps reduce:</p>
 <ul>
 <li><strong>HTTP Requests:</strong> Multiple resources can be fetched in a single request</li>
 <li><strong>Response size:</strong> Only the fields asked for are returned minimizing the payload downloaded by the client</li>
 <li><strong>Endpoint Bloat:</strong> GraphQL provides a single endpoint and allows clients to ask for what they want from the single source. No need to memorize and maintain various feature endpoints.</li>
 <li><strong>External Documentation:</strong> GraphQL is self-documenting, reducing the time and resources needed for maintaining API documentation</li>
+<li><strong>Total SQL queries:</strong> GraphQL queries can ask for multiple resources, or nested resources in a single request allowing GraphQL to determine the most efficient way to get the data from the database with as few SQL queries as possible.</li>
+<li><strong>Code Duplication:</strong> Because GraphQL exposes all server capabilities in a single Schema, there's no need to duplicate code for various endpoints. The client can control the shape of their model without specific feature endpoint, which typically requires duplicate server code.</li>
 </ul>
-<p><strong>Extendable Schema</strong></p>
-<p>GraphQL is centered around a strong-typed Schema. WPGraphQL defines GraphQL Types for core WordPress data such as Posts, Terms, Comments, Users and more.</p>
-<div class="codehilite"><pre><span></span>{
-  posts {
-    edges {
-       node {
-         id
-         title
-         date
-       }
-    }
-  }
-}
-</pre></div>
-
-
+<p>WPGraphQL helps improve:</p>
+<ul>
+<li><strong>Performance:</strong> WPGraphQL utilizies existing WordPress Core APIs, such as WP_Query, so caching and filters are respected, but WPGraphQL also makes use of deferred resolvers and some look-ahead techniques (as all fields are known in the request before execution begins), allowing for data to be fetched and returned with as few SQL queries as possible. </li>
+<li><strong>Developer Happiness:</strong> The strong-type system and explicit nature of GraphQL requests makes it easy for developers to understand GraphQL query and mutation requests long after code is written. Additionally, code duplication is drastically reduced as the API is defined in one spot, not in feature endpoints.</li>
+<li><strong>Versioning:</strong> REST APIs and other APIs can be difficult to version. GraphQL makes <a href="http://graphql.org/#without-versions">evolving the API</a> much easier than how other APIs are versioned. </li>
+</ul>
 <h2 id="how-does-wpgraphql-work">How does WPGraphQL Work?<a class="headerlink" href="#how-does-wpgraphql-work" title="Permanent link">&para;</a></h2>
                 
                   

@@ -58,13 +58,15 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
+      <link rel="stylesheet" href="../assets/css/extra.css">
+    
     
   </head>
   
     
     
     
-      <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+      <body data-md-color-primary="blue" data-md-color-accent="orange">
     
   
     <svg class="md-svg">
@@ -85,7 +87,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://wpgraphql.github.io/wp-graphql/" title="WPGraphQL" class="md-header-nav__button md-logo">
           
-            <img src="../images/wp-graphql-logo-white.svg" width="24" height="24">
+            <img src="../assets/images/logo.png" width="24" height="24">
           
         </a>
       </div>
@@ -179,7 +181,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <span class="md-nav__button md-logo">
       
-        <img src="../images/wp-graphql-logo-white.svg" width="24" height="24">
+        <img src="../assets/images/logo.png" width="24" height="24">
       
     </span>
     WPGraphQL
@@ -274,6 +276,20 @@
           <li class="md-nav__item">
   <a href="#verify-the-endpoint-works" title="Verify the Endpoint Works" class="md-nav__link">
     Verify the Endpoint Works
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flush-permalinks" title="Flush Permalinks" class="md-nav__link">
+    Flush Permalinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-plugin-without-the-graphql-endpoint" title="Using the Plugin without the /graphql Endpoint" class="md-nav__link">
+    Using the Plugin without the /graphql Endpoint
   </a>
   
 </li>
@@ -603,6 +619,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#flush-permalinks" title="Flush Permalinks" class="md-nav__link">
+    Flush Permalinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-plugin-without-the-graphql-endpoint" title="Using the Plugin without the /graphql Endpoint" class="md-nav__link">
+    Using the Plugin without the /graphql Endpoint
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -643,32 +673,30 @@
 <p>The most common use of WPGraphQL is as an API endpoint that can be accessed via HTTP requests (<a href="#using-the-plugin-without-the-graphql-endpoint">although it can be used without remote HTTP requests as well</a>)</p>
 <p>In order for the <code>/graphql</code> endpoint to work, you must have <a href="https://codex.wordpress.org/Using_Permalinks">pretty permalinks</a> enabled and any permalink structure <em>other</em> than the default WordPress permalink structure.</p>
 <p>Once the plugin is active, your site should have a <code>yoursite.com/graphql</code> endpoint and you the expected response is a JSON payload like so:</p>
-<div class="codehilite"><pre><span></span>    <span class="s">&quot;errors&quot;</span><span class="o">:</span> <span class="p">[</span>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;errors&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="s">&quot;message&quot;</span><span class="o">:</span> <span class="s">&quot;GraphQL requests must be a POST or GET Request with a valid query&quot;</span><span class="p">,</span>
-            <span class="s">&quot;category&quot;</span><span class="o">:</span> <span class="s">&quot;user&quot;</span>
+            <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;GraphQL requests must be a POST or GET Request with a valid query&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span>
         <span class="p">}</span>
     <span class="p">]</span>
-<span class="p">}</span><span class="err">```</span>
+<span class="p">}</span>
+</pre></div>
 
-<span class="n">If</span> <span class="n">you</span> <span class="n">see</span> <span class="n">anything</span> <span class="k">else</span><span class="p">,</span> <span class="n">such</span> <span class="n">as</span> <span class="n">your</span> <span class="n">site</span><span class="err">&#39;</span><span class="n">s</span> <span class="mi">404</span> <span class="n">page</span><span class="p">,</span> <span class="n">you</span> <span class="n">may</span> <span class="n">need</span> <span class="n">to</span> <span class="p">[</span><span class="n">flush</span> <span class="n">permalinks</span><span class="p">](</span><span class="err">#</span><span class="n">flush</span><span class="o">-</span><span class="n">permalinks</span><span class="p">).</span>
 
-<span class="cp">### Flush Permalinks</span>
-
-<span class="n">Activating</span> <span class="n">the</span> <span class="n">plugin</span> <span class="n">_should_</span> <span class="n">cause</span> <span class="n">the</span> <span class="n">permalinks</span> <span class="n">to</span> <span class="n">flush</span><span class="p">.</span> <span class="n">Occasionally</span><span class="p">,</span> <span class="n">this</span> <span class="n">doesn</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">work</span><span class="p">.</span> <span class="n">If</span> <span class="n">you</span> <span class="n">have</span> <span class="n">a</span> <span class="n">permalink</span> <span class="n">structure</span> <span class="n">other</span> <span class="n">than</span> <span class="n">the</span> <span class="k">default</span> <span class="n">WordPress</span> <span class="n">structure</span><span class="p">,</span> <span class="n">and</span> <span class="n">the</span> <span class="n">plugin</span> <span class="n">is</span> <span class="n">active</span> <span class="n">but</span> <span class="n">nothing</span> <span class="n">shows</span> <span class="n">at</span> <span class="n">your</span> <span class="n">site</span><span class="err">&#39;</span><span class="n">s</span> <span class="err">`</span><span class="o">/</span><span class="n">graphql</span><span class="err">`</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">try</span> <span class="n">to</span> <span class="n">manually</span> <span class="n">flush</span> <span class="n">your</span> <span class="n">permalinks</span> <span class="nl">by</span><span class="p">:</span>
-
-<span class="o">*</span> <span class="n">From</span> <span class="n">your</span> <span class="n">WordPress</span> <span class="n">dashboard</span><span class="p">,</span> <span class="n">visit</span> <span class="n">the</span> <span class="n">_</span><span class="o">**</span><span class="n">Settings</span> <span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">Permalinks</span><span class="o">**</span><span class="n">_</span> <span class="n">page</span><span class="p">.</span> <span class="n">Just</span> <span class="n">visiting</span> <span class="n">the</span> <span class="n">page</span> <span class="n">should</span> <span class="n">flush</span> <span class="n">the</span> <span class="n">permalinks</span>
-
-<span class="n">or</span>
-
-<span class="o">*</span> <span class="n">Using</span> <span class="n">WP</span> <span class="n">CLI</span> <span class="n">run</span> <span class="err">`</span><span class="n">wp</span> <span class="n">rewrite</span> <span class="n">flush</span><span class="err">`</span>
-
-<span class="cp">### Using the Plugin without the /graphql Endpoint</span>
-
-<span class="n">WPGraphQL</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="n">from</span> <span class="n">the</span> <span class="n">context</span> <span class="n">of</span> <span class="n">WordPress</span> <span class="n">PHP</span> <span class="n">and</span> <span class="n">doesn</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">require</span> <span class="n">HTTP</span> <span class="n">requests</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span><span class="p">.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">completely</span> <span class="n">remove</span> <span class="n">the</span> <span class="err">`</span><span class="o">/</span><span class="n">graphql</span><span class="err">`</span> <span class="n">endpoint</span> <span class="n">that</span> <span class="n">the</span> <span class="n">plugin</span> <span class="n">provides</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">API</span> <span class="n">is</span> <span class="n">not</span> <span class="n">available</span> <span class="n">publicly</span> <span class="k">in</span> <span class="n">_any</span> <span class="n">way_</span> <span class="n">but</span> <span class="n">still</span> <span class="n">use</span> <span class="n">GraphQL</span> <span class="k">in</span> <span class="n">your</span> <span class="n">plugin</span> <span class="n">and</span> <span class="n">theme</span> <span class="n">code</span> <span class="n">by</span> <span class="nl">using</span><span class="p">:</span>
-
-<span class="err">```</span><span class="n">php</span>
-<span class="n">do_graphql_request</span><span class="p">()</span>
+<p>If you see anything else, such as your site's 404 page, you may need to <a href="#flush-permalinks">flush permalinks</a>.</p>
+<h3 id="flush-permalinks">Flush Permalinks<a class="headerlink" href="#flush-permalinks" title="Permanent link">&para;</a></h3>
+<p>Activating the plugin <em>should</em> cause the permalinks to flush. Occasionally, this doesn't work. If you have a permalink structure other than the default WordPress structure, and the plugin is active but nothing shows at your site's <code>/graphql</code> endpoint, try to manually flush your permalinks by:</p>
+<ul>
+<li>From your WordPress dashboard, visit the <em><strong>Settings &gt; Permalinks</strong></em> page. Just visiting the page should flush the permalinks</li>
+</ul>
+<p>or</p>
+<ul>
+<li>Using WP CLI run <code>wp rewrite flush</code></li>
+</ul>
+<h3 id="using-the-plugin-without-the-graphql-endpoint">Using the Plugin without the /graphql Endpoint<a class="headerlink" href="#using-the-plugin-without-the-graphql-endpoint" title="Permanent link">&para;</a></h3>
+<p>WPGraphQL can be used from the context of WordPress PHP and doesn't require HTTP requests to be used. You can completely remove the <code>/graphql</code> endpoint that the plugin provides so that the API is not available publicly in <em>any way</em> but still use GraphQL in your plugin and theme code by using:</p>
+<div class="codehilite"><pre><span></span><span class="x">do_graphql_request()</span>
 </pre></div>
 
 
