@@ -96,6 +96,16 @@
             "title": "Backend"
         }, 
         {
+            "location": "/tutorials/", 
+            "text": "Tutorials", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/tutorials/#tutorials", 
+            "text": "", 
+            "title": "Tutorials"
+        }, 
+        {
             "location": "/tutorials/using-graphiql-to-explore-docs-and-schema/", 
             "text": "", 
             "title": "Using GraphiQL to explore the Schema and Docs"
@@ -129,6 +139,16 @@
             "location": "/tutorials/unit-testing-extensions/", 
             "text": "", 
             "title": "Unit Testing your code that extends WPGraphQL"
+        }, 
+        {
+            "location": "/reference/", 
+            "text": "Reference", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/reference/#reference", 
+            "text": "", 
+            "title": "Reference"
         }, 
         {
             "location": "/reference/types-and-schema/", 
