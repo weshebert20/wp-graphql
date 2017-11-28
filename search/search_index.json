@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "WPGraphQL", 
+            "text": "WPGraphQL\n\n\nTesting docs", 
             "title": "About"
         }, 
         {
             "location": "/#wpgraphql", 
-            "text": "", 
+            "text": "Testing docs", 
             "title": "WPGraphQL"
         }
     ]
