@@ -13,7 +13,7 @@
         <meta name="description" content="GraphQL API for your WordPress site">
       
       
-        <link rel="canonical" href="https://wp-graphql.github.io/wp-graphql/tutorials/using-graphiql-to-explore-docs-and-schema/">
+        <link rel="canonical" href="https://wp-graphql.github.io/wp-graphql/tutorials/exploring-graphql/">
       
       
         <meta name="author" content="Jason Bahl">
@@ -38,7 +38,7 @@
     
     
       
-        <title>Using GraphiQL to explore the Schema and Docs - WPGraphQL</title>
+        <title>Exploring WPGraphQL - WPGraphQL</title>
       
     
     
@@ -102,7 +102,7 @@
                 WPGraphQL
               </span>
               <span class="md-header-nav__topic">
-                Using GraphiQL to explore the Schema and Docs
+                Exploring WPGraphQL
               </span>
             
           
@@ -319,11 +319,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Using GraphiQL to explore the Schema and Docs
+        Exploring WPGraphQL
       </label>
     
-    <a href="./" title="Using GraphiQL to explore the Schema and Docs" class="md-nav__link md-nav__link--active">
-      Using GraphiQL to explore the Schema and Docs
+    <a href="./" title="Exploring WPGraphQL" class="md-nav__link md-nav__link--active">
+      Exploring WPGraphQL
     </a>
     
       
@@ -337,8 +337,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#graphiql-tools-you-can-use" title="GraphiQL Tools You Can Use" class="md-nav__link">
-    GraphiQL Tools You Can Use
+  <a href="#graphiql" title="GraphiQL" class="md-nav__link">
+    GraphiQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphiql-tools-apps" title="GraphiQL Tools / Apps" class="md-nav__link">
+    GraphiQL Tools / Apps
   </a>
   
 </li>
@@ -366,6 +373,101 @@
         <li class="md-nav__item">
   <a href="#explore-your-schema-docs" title="Explore your Schema Docs" class="md-nav__link">
     Explore your Schema Docs
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-the-docs" title="Search the Docs" class="md-nav__link">
+    Search the Docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-some-queries" title="Write Some Queries" class="md-nav__link">
+    Write Some Queries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#queries-to-try" title="Queries to try" class="md-nav__link">
+    Queries to try
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-posts" title="Get a List of Posts" class="md-nav__link">
+    Get a List of Posts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-posts-with-author-info" title="Get a List of Posts with Author info" class="md-nav__link">
+    Get a List of Posts with Author info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-users" title="Get a List of Users" class="md-nav__link">
+    Get a List of Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-users-with-their-recent-posts" title="Get a List of Users with their Recent Posts" class="md-nav__link">
+    Get a List of Users with their Recent Posts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-aliases" title="Exploring Aliases" class="md-nav__link">
+    Exploring Aliases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-variables" title="Exploring Variables" class="md-nav__link">
+    Exploring Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keep-exploring" title="Keep Exploring" class="md-nav__link">
+    Keep Exploring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-requests" title="Debugging Requests" class="md-nav__link">
+    Debugging Requests
   </a>
   
 </li>
@@ -505,6 +607,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../reference/deferred-resolvers/" title="Deferred Resolvers" class="md-nav__link">
+      Deferred Resolvers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../reference/auth/" title="Auth" class="md-nav__link">
       Auth
     </a>
@@ -609,8 +723,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#graphiql-tools-you-can-use" title="GraphiQL Tools You Can Use" class="md-nav__link">
-    GraphiQL Tools You Can Use
+  <a href="#graphiql" title="GraphiQL" class="md-nav__link">
+    GraphiQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphiql-tools-apps" title="GraphiQL Tools / Apps" class="md-nav__link">
+    GraphiQL Tools / Apps
   </a>
   
 </li>
@@ -640,6 +761,101 @@
     Explore your Schema Docs
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-the-docs" title="Search the Docs" class="md-nav__link">
+    Search the Docs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-some-queries" title="Write Some Queries" class="md-nav__link">
+    Write Some Queries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#queries-to-try" title="Queries to try" class="md-nav__link">
+    Queries to try
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-posts" title="Get a List of Posts" class="md-nav__link">
+    Get a List of Posts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-posts-with-author-info" title="Get a List of Posts with Author info" class="md-nav__link">
+    Get a List of Posts with Author info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-users" title="Get a List of Users" class="md-nav__link">
+    Get a List of Users
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-a-list-of-users-with-their-recent-posts" title="Get a List of Users with their Recent Posts" class="md-nav__link">
+    Get a List of Users with their Recent Posts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-aliases" title="Exploring Aliases" class="md-nav__link">
+    Exploring Aliases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exploring-variables" title="Exploring Variables" class="md-nav__link">
+    Exploring Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keep-exploring" title="Keep Exploring" class="md-nav__link">
+    Keep Exploring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging-requests" title="Debugging Requests" class="md-nav__link">
+    Debugging Requests
+  </a>
+  
 </li>
       
       
@@ -656,28 +872,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/wp-graphql/wp-graphql/edit/master/docs/tutorials/using-graphiql-to-explore-docs-and-schema.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/wp-graphql/wp-graphql/edit/master/docs/tutorials/exploring-graphql.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="using-graphiql-to-explore-wpgraphql">Using GraphiQL to explore WPGraphQL<a class="headerlink" href="#using-graphiql-to-explore-wpgraphql" title="Permanent link">&para;</a></h1>
+                <h1 id="exploring-wpgraphql">Exploring WPGraphQL<a class="headerlink" href="#exploring-wpgraphql" title="Permanent link">&para;</a></h1>
+<p>In this Tutorial, we will be exploring GraphQL using GraphiQL.</p>
+<h2 id="graphiql">GraphiQL<a class="headerlink" href="#graphiql" title="Permanent link">&para;</a></h2>
 <p><a href="https://github.com/graphql/graphiql">GraphiQL</a> is the de-facto tool for interacting with a GraphQL Schema. It's an open source graphical interactive in-browser GraphQL IDE. </p>
 <p>It allows users to explore a GraphQL Schema's documentation, and execute GraphQL queries and mutations and see the response in real time.</p>
 <p>GraphiQL itself is a React component, so to use it, you need to either implement the React component, or use something that implements it already.</p>
-<h2 id="graphiql-tools-you-can-use">GraphiQL Tools You Can Use<a class="headerlink" href="#graphiql-tools-you-can-use" title="Permanent link">&para;</a></h2>
+<h2 id="graphiql-tools-apps">GraphiQL Tools / Apps<a class="headerlink" href="#graphiql-tools-apps" title="Permanent link">&para;</a></h2>
 <p>Below is a (non-comprehensive) list of tools that implement GraphiQL that you can use to explore and experiment with your WPGraphQL API.</p>
 <ul>
-<li><strong><a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>:</strong> GraphiQL as an Electron desktop app <ul>
-<li>FWIW, this is the tool we use for our documentation demos / screenshots. </li>
-</ul>
-</li>
+<li><strong><a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>:</strong> GraphiQL as an Electron desktop app</li>
 <li><strong><a href="https://github.com/wp-graphql/wp-graphiql">WPGraphiQL</a>:</strong> WordPress plugin that adds GraphiQL to the WordPress admin dashboard </li>
 <li><strong><a href="https://github.com/graphcool/graphql-playground/releases">GraphQL Playground</a>:</strong> Desktop App from the folks at Graph.Cool.</li>
 <li><strong><a href="https://github.com/andev-software/graphql-ide">GraphQL IDE</a>:</strong> Desktop App that supports multiple endpoint configurations</li>
 <li><strong><a href="https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja?hl=en">Altair</a>:</strong> Chrome Extension</li>
 <li><strong><a href="https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij?hl=en">ChromiQL</a>:</strong> Chrome Extension</li>
 </ul>
-<p>For the sake of this guide, we will use <a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>, but feel free to explore the others, or
-if you so dare, build your own!</p>
+<div class="admonition info">
+<p class="admonition-title">This Guide References the GraphiQL Desktop App</p>
+<p>Throughout this guide, for screenshots, etc we use <a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a>. Any specific info on using GraphiQL will be referring to that specific App, but should be generally applicable to any of them.
+Feel free to use the same one we use, explore the others, or even build your own!</p>
+</div>
 <h2 id="configure-graphiql">Configure GraphiQL<a class="headerlink" href="#configure-graphiql" title="Permanent link">&para;</a></h2>
 <p>Once you have a WordPress install setup with the <a href="../../install-and-activate/">WPGraphQL plugin installed and activated</a> 
 and the GraphiQL Desktop App (or other GraphiQL tool) <a href="https://github.com/skevy/graphiql-app#installation">installed</a>, 
@@ -705,8 +923,168 @@ the first thing you will want to do is point it at your WPGraphQL endpoint.</p>
 <p>For example, clicking <code>RooyQuery</code> displays the fields that are available as part of the root. You can scroll through the list to see what's available. what the description is, what Type will be returned, and what arguments the field accepts.</p>
 <p><img alt="GraphiQL Explore Root Query" src="../../assets/images/graphiql-04-explore-root-query.gif" /></p>
 <p>When looking at the GraphQL Docs, it might be overwhelming trying to understand what everything is that you're seeing. </p>
-<p>Her'es an annotated breakdown of what is displayed in the Documentation panel as you explore the docs.</p>
+<p>Here's an annotated breakdown of what is displayed in the Documentation panel as you explore the docs.</p>
 <p><img alt="GraphiQL Annotated Docs" src="../../assets/images/graphiql-05-field-annotation.png" /></p>
+<h3 id="search-the-docs">Search the Docs<a class="headerlink" href="#search-the-docs" title="Permanent link">&para;</a></h3>
+<p>In addition to clicking to explore the GraphQL Schema Docs, you can also search the documentation. Let's say you wanted to 
+know how to use GraphQL to query for pages. You could search "page" in the Search field in the Documentation pane, and 
+you would see all results in the Schema where "page" was mentioned. This can help understand all the entry points where "pages"
+can be queried. </p>
+<p><img alt="GraphiQL Search Docs" src="../../assets/images/graphiql-06-search-docs.png" /></p>
+<p>We can see here that there is a "pages" field on the RootQuery. Next, Let's try to query for pages!</p>
+<h2 id="write-some-queries">Write Some Queries<a class="headerlink" href="#write-some-queries" title="Permanent link">&para;</a></h2>
+<p>We know we can query "pages" on the RootQuery, because we saw it in the docs, but how do we do that?</p>
+<p>Well, writing GraphQL Queries in GraphiQL is super intuitive. As you start typing, GraphiQL suggests fields that you might
+be looking for and will complete them for you if you press Tab on the highlighted suggestion.</p>
+<p>Let's write a query to get a list of pages. </p>
+<p>GraphiQL has some helper text explaining how to write queries. We can select it all and remove it.</p>
+<p>Then, since <code>pages</code> is a RootQuery field, we can simply start our query with an opening <code>{</code> bracket, then start typing <code>page</code> and we will see the autoselect pop-up.</p>
+<p>We can arrow-down to select <code>pages</code>, then press <code>tab</code> and it will autocomplete. </p>
+<p>Then we need to make a Selection on the <code>pages</code> field. We can use the Documentation explorer to see what's available to query, or
+we can just start typing to see what the Typeahead suggest tells us.</p>
+<p>Once ready, click the Play button to execute the query.</p>
+<p>Below, you can see using the Typeahead feature to help build a query and see what fields are available. You can also see how GraphiQL shows helpers 
+when the syntax is broken by highlighting things red. </p>
+<p><img alt="GraphiQL Write first Query" src="../../assets/images/graphiql-07-write-first-query.gif" /></p>
+<h3 id="queries-to-try">Queries to try<a class="headerlink" href="#queries-to-try" title="Permanent link">&para;</a></h3>
+<p>Here are some queries to try. Since GraphQL queries are static strings, you can simply copy these and paste them into your GraphiQL explorer.</p>
+<h4 id="get-a-list-of-posts">Get a List of Posts<a class="headerlink" href="#get-a-list-of-posts" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>{
+  posts {
+    edges {
+      node {
+        id
+        title
+        date
+        content
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<h4 id="get-a-list-of-posts-with-author-info">Get a List of Posts with Author info<a class="headerlink" href="#get-a-list-of-posts-with-author-info" title="Permanent link">&para;</a></h4>
+<p>This is a pretty neat example of the power of GraphQL. Posts and Users are stored in different tables in WordPress and 
+getting Post Data and User data typically requires multiple queries. </p>
+<p>You would typically first use <code>WP_Query</code> to get a list of posts, then while looping through the posts, you would get the author data by querying for that.</p>
+<p>GraphQL drastically simplifies that, allowing you to just declare what fields you want from each post, and what fields you want from each Post's author. And, 
+behind the scenes, WPGraphQL is doing some cool stuff to optimize the queries to make sure the fewest possible queries are run
+to get the needed data. <a href="../../reference/deferred-resolvers/">Learn More</a></p>
+<div class="codehilite"><pre><span></span>{
+  posts {
+    edges {
+      node {
+        id
+        title
+        date
+        author {
+          id
+          name
+          username
+          description
+        }
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<h4 id="get-a-list-of-users">Get a List of Users<a class="headerlink" href="#get-a-list-of-users" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span>{
+  users {
+    edges {
+      node {
+        id
+        name
+        username
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<h4 id="get-a-list-of-users-with-their-recent-posts">Get a List of Users with their Recent Posts<a class="headerlink" href="#get-a-list-of-users-with-their-recent-posts" title="Permanent link">&para;</a></h4>
+<p>We saw earlier how we can query for Author data on posts, but we can also get to posts from the user as well.</p>
+<p>Here we are going to query for a list of users, then ask for each users posts, and for each post ask for the author. </p>
+<p>That makes my head spin, but it's really not <em>that</em> uncommon of a need.</p>
+<p>Try executing this and see what you get. </p>
+<div class="codehilite"><pre><span></span>{
+  users {
+    edges {
+      node {
+        id
+        name
+        username
+        posts {
+          edges {
+            node {
+              id
+              title
+              date
+              author {
+                id
+                name
+                username
+                description
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<p>You should see a list of users, and on each user you should see a list of posts, if that user has any, or empty post.edges if they don't. Then the posts should have an author field with the same author data as the user node.</p>
+<p>Pretty neat!</p>
+<h2 id="exploring-aliases">Exploring Aliases<a class="headerlink" href="#exploring-aliases" title="Permanent link">&para;</a></h2>
+<p>GraphQL has a subtle but very powerful feature called Aliasing. You can set aliases on fields as you query, and the fields will
+be returned to you using the specified Alias. </p>
+<p>This really puts a lot of power in the clients hands.</p>
+<p>Lets try a simple query with Aliases.</p>
+<div class="codehilite"><pre><span></span>{
+  recentPosts: posts {
+    items: edges {
+      post: node {
+        globalId: id
+        id: postId
+        articleTitle: title
+        articleDate: date
+      }
+    }
+  }
+}
+</pre></div>
+
+
+<p>Now run that query and see how the fields are returned with the Aliases set as the key in the response. Wow!</p>
+<h2 id="exploring-variables">Exploring Variables<a class="headerlink" href="#exploring-variables" title="Permanent link">&para;</a></h2>
+<p>Variables are a very powerful feature of GraphQL.  </p>
+<div class="admonition warning">
+<p class="admonition-title">Coming Soon</p>
+<p>Until we have time to write more info on this, you can learn more <a href="http://graphql.org/learn/queries/#variables">here</a></p>
+</div>
+<h2 id="keep-exploring">Keep Exploring<a class="headerlink" href="#keep-exploring" title="Permanent link">&para;</a></h2>
+<p>At this point, you should be familiar enough with GraphiQL to continue exploring what kind of data you can access.</p>
+<h2 id="debugging-requests">Debugging Requests<a class="headerlink" href="#debugging-requests" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Disclaimer</p>
+<p>This section applies particularly to the <a href="https://github.com/skevy/graphiql-app">GraphiQL Desktop App</a> as it's an Electron app.</p>
+</div>
+<p>Since the GraphiQL Desktop App is an Electron App, it's built on Chromium, which means we can open up Chrome developer tools <code>Command + Option + I</code></p>
+<p>Then in Developer tools, navigate to the <code>Network</code> tab.</p>
+<p>With the <code>Network</code> tab open, execute a GraphQL Query.</p>
+<p>You can see the requests that are sent and the payloads that are returned. You can explore the headers and the formatting that GraphiQL uses to send requests, etc.</p>
+<p>Using the Network tab can be helpful for debugging when something goes wrong and no response is rendered in the GraphiQL response pane.</p>
+<div class="admonition warning">
+<p class="admonition-title">More info coming soon</p>
+<p>This section needs more info...</p>
+</div>
                 
                   
                 

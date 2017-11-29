@@ -36,7 +36,7 @@
     
         
     <url>
-     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/using-graphiql-to-explore-docs-and-schema/</loc>
+     <loc>https://wp-graphql.github.io/wp-graphql//tutorials/exploring-graphql/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -89,6 +89,12 @@
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/actions-filters/</loc>
+     <lastmod>2017-11-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://wp-graphql.github.io/wp-graphql//reference/deferred-resolvers/</loc>
      <lastmod>2017-11-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
