@@ -322,23 +322,48 @@
         }, 
         {
             "location": "/community-and-support/", 
-            "text": "Support", 
+            "text": "Community \n Support", 
             "title": "Community & Support"
         }, 
         {
-            "location": "/community-and-support/#support", 
+            "location": "/community-and-support/#community-support", 
             "text": "", 
-            "title": "Support"
+            "title": "Community &amp; Support"
         }, 
         {
             "location": "/contributing/", 
-            "text": "Contributing", 
+            "text": "Roadmap / Contributing\n\n\nThe general roadmap for a 1.0.0 release of WPGraphQL is:\n\n\n\n\n Full unit test coverage (98-100%).\n\n\n Post Object Queries\n\n\n Post Object Mutations (basic CRUD)\n\n\n Custom Post Type Queries\n\n\n Custom Post Type Mutations (basic CRUD)\n\n\n Page Queries\n\n\n Page Mutations (basic CRUD)\n\n\n MediaItem Queries\n\n\n MediaItem Mutations (basic CRUD, including file uploads/deletions)\n\n\n Term Object Queries\n\n\n Term Object Mutations (basic CRUD)\n\n\n Comment Queries\n\n\n Comment Mutations (basic CRUD)\n\n\n Plugin Queries\n\n\n Plugin Mutations (activate/deactivate/install/uninstall)\n\n\n Theme Queries\n\n\n Theme Mutations (activate/deactivate/install/uninstall)\n\n\n User Queries\n\n\n User Mutations (basic CRUD)\n\n\n\n\nContribute to WPGraphQL\n\n\nWPGraphQL welcomes community contributions, bug reports and other constructive feedback.\n\n\nWhen contributing please ensure you follow the guidelines below so that we can keep on top of things.\n\n\nGetting Started\n\n\n\n\nDo not report potential security vulnerabilities here. Email them privately to our security team at \n\ninfo@wpgraphql.com\n\n\nBefore submitting a ticket, please be sure to replicate the behavior with no other plugins active and on a base theme like Twenty Seventeen.\n\n\nSubmit a ticket for your issue, assuming one does not already exist.\n\n\nRaise it on our \nIssue Tracker\n\n\nClearly describe the issue including steps to reproduce the bug.\n\n\nMake sure you fill in the earliest version that you know has the issue as well as the version of WordPress you're using.\n\n\n\n\nMaking Changes\n\n\n\n\nFork the repository on GitHub\n\n\nMake the changes to your forked repository\n\n\nEnsure you stick to the \nWordPress Coding Standards\n\n\nWhen committing, reference your issue (if present) and include a note about the fix\n\n\nIf possible, and if applicable, please also add/update unit tests for your changes\n\n\nPush the changes to your fork and submit a pull request to the 'develop' branch of this repository\n\n\n\n\nCode Documentation\n\n\n\n\nWe strive for full doc coverage and follow the standards set by phpDoc\n\n\nPlease make sure that every function is documented so that when we update our API Documentation things don't go awry!\n\t* If you're adding/editing a function in a class, make sure to add \n@access {private|public|protected}\n\n\nFinally, please use tabs and not spaces.\n\n\n\n\nAt this point you're waiting on us to merge your pull request. We'll review all pull requests, and make suggestions and changes if necessary.\n\n\n\n\nNOTE:\n This CONTRIBUTING.md file was forked from \nEasy Digital Downloads\n\n\n\n\nFiling an issue\n\n\nIf you've found an issue, we'd love to hear about it, \nbut\n we'd love to have sufficient details to investigate. When filing an issue, provide as much details as you can about the issue, screenshots are helpful, and a detailed description of the of what actions you've taken to debug already.", 
             "title": "Contributing"
         }, 
         {
-            "location": "/contributing/#contributing", 
-            "text": "", 
-            "title": "Contributing"
+            "location": "/contributing/#roadmap-contributing", 
+            "text": "The general roadmap for a 1.0.0 release of WPGraphQL is:    Full unit test coverage (98-100%).   Post Object Queries   Post Object Mutations (basic CRUD)   Custom Post Type Queries   Custom Post Type Mutations (basic CRUD)   Page Queries   Page Mutations (basic CRUD)   MediaItem Queries   MediaItem Mutations (basic CRUD, including file uploads/deletions)   Term Object Queries   Term Object Mutations (basic CRUD)   Comment Queries   Comment Mutations (basic CRUD)   Plugin Queries   Plugin Mutations (activate/deactivate/install/uninstall)   Theme Queries   Theme Mutations (activate/deactivate/install/uninstall)   User Queries   User Mutations (basic CRUD)", 
+            "title": "Roadmap / Contributing"
+        }, 
+        {
+            "location": "/contributing/#contribute-to-wpgraphql", 
+            "text": "WPGraphQL welcomes community contributions, bug reports and other constructive feedback.  When contributing please ensure you follow the guidelines below so that we can keep on top of things.", 
+            "title": "Contribute to WPGraphQL"
+        }, 
+        {
+            "location": "/contributing/#getting-started", 
+            "text": "Do not report potential security vulnerabilities here. Email them privately to our security team at  info@wpgraphql.com  Before submitting a ticket, please be sure to replicate the behavior with no other plugins active and on a base theme like Twenty Seventeen.  Submit a ticket for your issue, assuming one does not already exist.  Raise it on our  Issue Tracker  Clearly describe the issue including steps to reproduce the bug.  Make sure you fill in the earliest version that you know has the issue as well as the version of WordPress you're using.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/contributing/#making-changes", 
+            "text": "Fork the repository on GitHub  Make the changes to your forked repository  Ensure you stick to the  WordPress Coding Standards  When committing, reference your issue (if present) and include a note about the fix  If possible, and if applicable, please also add/update unit tests for your changes  Push the changes to your fork and submit a pull request to the 'develop' branch of this repository", 
+            "title": "Making Changes"
+        }, 
+        {
+            "location": "/contributing/#code-documentation", 
+            "text": "We strive for full doc coverage and follow the standards set by phpDoc  Please make sure that every function is documented so that when we update our API Documentation things don't go awry!\n\t* If you're adding/editing a function in a class, make sure to add  @access {private|public|protected}  Finally, please use tabs and not spaces.   At this point you're waiting on us to merge your pull request. We'll review all pull requests, and make suggestions and changes if necessary.   NOTE:  This CONTRIBUTING.md file was forked from  Easy Digital Downloads", 
+            "title": "Code Documentation"
+        }, 
+        {
+            "location": "/contributing/#filing-an-issue", 
+            "text": "If you've found an issue, we'd love to hear about it,  but  we'd love to have sufficient details to investigate. When filing an issue, provide as much details as you can about the issue, screenshots are helpful, and a detailed description of the of what actions you've taken to debug already.", 
+            "title": "Filing an issue"
         }
     ]
 }

@@ -537,9 +537,70 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Contributing
+      </label>
+    
     <a href="./" title="Contributing" class="md-nav__link md-nav__link--active">
       Contributing
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-wpgraphql" title="Contribute to WPGraphQL" class="md-nav__link">
+    Contribute to WPGraphQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-changes" title="Making Changes" class="md-nav__link">
+    Making Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-documentation" title="Code Documentation" class="md-nav__link">
+    Code Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filing-an-issue" title="Filing an issue" class="md-nav__link">
+    Filing an issue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -561,6 +622,54 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-wpgraphql" title="Contribute to WPGraphQL" class="md-nav__link">
+    Contribute to WPGraphQL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-changes" title="Making Changes" class="md-nav__link">
+    Making Changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-documentation" title="Code Documentation" class="md-nav__link">
+    Code Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filing-an-issue" title="Filing an issue" class="md-nav__link">
+    Filing an issue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -574,7 +683,64 @@
                   <a href="https://github.com/wp-graphql/wp-graphql/edit/master/docs/contributing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
+                <h1 id="roadmap-contributing">Roadmap / Contributing<a class="headerlink" href="#roadmap-contributing" title="Permanent link">&para;</a></h1>
+<p>The general roadmap for a 1.0.0 release of WPGraphQL is:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Full unit test coverage (98-100%).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Post Object Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Post Object Mutations (basic CRUD)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Custom Post Type Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Custom Post Type Mutations (basic CRUD)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Page Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Page Mutations (basic CRUD)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> MediaItem Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> MediaItem Mutations (basic CRUD, including file uploads/deletions)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Term Object Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Term Object Mutations (basic CRUD)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Comment Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Comment Mutations (basic CRUD)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Plugin Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Plugin Mutations (activate/deactivate/install/uninstall)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Theme Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Theme Mutations (activate/deactivate/install/uninstall)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> User Queries</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> User Mutations (basic CRUD)</li>
+</ul>
+<h2 id="contribute-to-wpgraphql">Contribute to WPGraphQL<a class="headerlink" href="#contribute-to-wpgraphql" title="Permanent link">&para;</a></h2>
+<p>WPGraphQL welcomes community contributions, bug reports and other constructive feedback.</p>
+<p>When contributing please ensure you follow the guidelines below so that we can keep on top of things.</p>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Do not report potential security vulnerabilities here. Email them privately to our security team at 
+<a href="mailto:info@wpgraphql.com">info@wpgraphql.com</a></strong></li>
+<li>Before submitting a ticket, please be sure to replicate the behavior with no other plugins active and on a base theme like Twenty Seventeen.</li>
+<li>Submit a ticket for your issue, assuming one does not already exist.</li>
+<li>Raise it on our <a href="https://github.com/wp-graphql/wp-graphql/issues">Issue Tracker</a></li>
+<li>Clearly describe the issue including steps to reproduce the bug.</li>
+<li>Make sure you fill in the earliest version that you know has the issue as well as the version of WordPress you're using.</li>
+</ul>
+<h2 id="making-changes">Making Changes<a class="headerlink" href="#making-changes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fork the repository on GitHub</li>
+<li>Make the changes to your forked repository</li>
+<li>Ensure you stick to the <a href="https://codex.wordpress.org/WordPress_Coding_Standards">WordPress Coding Standards</a></li>
+<li>When committing, reference your issue (if present) and include a note about the fix</li>
+<li>If possible, and if applicable, please also add/update unit tests for your changes</li>
+<li>Push the changes to your fork and submit a pull request to the 'develop' branch of this repository</li>
+</ul>
+<h2 id="code-documentation">Code Documentation<a class="headerlink" href="#code-documentation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>We strive for full doc coverage and follow the standards set by phpDoc</li>
+<li>Please make sure that every function is documented so that when we update our API Documentation things don't go awry!
+	* If you're adding/editing a function in a class, make sure to add <code>@access {private|public|protected}</code></li>
+<li>Finally, please use tabs and not spaces.</li>
+</ul>
+<p>At this point you're waiting on us to merge your pull request. We'll review all pull requests, and make suggestions and changes if necessary.</p>
+<blockquote>
+<p><strong>NOTE:</strong> This CONTRIBUTING.md file was forked from <a href="https://github.com/easydigitaldownloads/easy-digital-downloads/blob/master/CONTRIBUTING.md">Easy Digital Downloads</a></p>
+</blockquote>
+<h3 id="filing-an-issue">Filing an issue<a class="headerlink" href="#filing-an-issue" title="Permanent link">&para;</a></h3>
+<p>If you've found an issue, we'd love to hear about it, <em>but</em> we'd love to have sufficient details to investigate. When filing an issue, provide as much details as you can about the issue, screenshots are helpful, and a detailed description of the of what actions you've taken to debug already.</p>
                 
                   
                 

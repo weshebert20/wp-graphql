@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//install-and-activate/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,13 +21,13 @@
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//quickstart/frontend/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//quickstart/backend/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -37,43 +37,43 @@
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/exploring-graphql/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/custom-post-types-and-taxonomies/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/add-fields-to-schema/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/use-graphql-in-php-without-http-request/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/override-field-resolvers/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/unit-testing-wpgraphql/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//tutorials/unit-testing-extensions/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -83,43 +83,43 @@
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/types-and-schema/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/actions-filters/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/deferred-resolvers/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/auth/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/extensions/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/tooling/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//reference/unit-tests/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -128,7 +128,7 @@
     
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//faq/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -136,7 +136,7 @@
     
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//community-and-support/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -144,7 +144,7 @@
     
     <url>
      <loc>https://wp-graphql.github.io/wp-graphql//contributing/</loc>
-     <lastmod>2017-11-28</lastmod>
+     <lastmod>2017-12-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
